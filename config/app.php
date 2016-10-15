@@ -167,15 +167,22 @@ return [
          * Package Service Providers...
          */
         Collective\Html\HtmlServiceProvider::class,
+        Bootstrapper\BootstrapperL5ServiceProvider::class,
 
         /*
          * Application Service Providers...
          */
+        Jlapp\Swaggervel\SwaggervelServiceProvider::class,
         App\Providers\AppServiceProvider::class,
         App\Providers\AuthServiceProvider::class,
         // App\Providers\BroadcastServiceProvider::class,
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
+        Laracasts\Flash\FlashServiceProvider::class,
+        Prettus\Repository\Providers\RepositoryServiceProvider::class,
+        \InfyOm\Generator\InfyOmGeneratorServiceProvider::class,
+        \InfyOm\AdminLTETemplates\AdminLTETemplatesServiceProvider::class,
+        Yajra\Datatables\DatatablesServiceProvider::class,
 
     ],
 
@@ -226,6 +233,31 @@ return [
         'View' => Illuminate\Support\Facades\View::class,
         'Form' => Collective\Html\FormFacade::class,
         'Html' => Collective\Html\HtmlFacade::class,
+        'Accordion' => Bootstrapper\Facades\Accordion::class,
+        'Alert' => Bootstrapper\Facades\Alert::class,
+        'Badge' => Bootstrapper\Facades\Badge::class,
+        'Breadcrumb' => Bootstrapper\Facades\Breadcrumb::class,
+        'Button' => Bootstrapper\Facades\Button::class,
+        'ButtonGroup' => Bootstrapper\Facades\ButtonGroup::class,
+        'Carousel' => Bootstrapper\Facades\Carousel::class,
+        'ControlGroup' => Bootstrapper\Facades\ControlGroup::class,
+        'DropdownButton' => Bootstrapper\Facades\DropdownButton::class,
+//        'Form' => 'Bootstrapper\Facades\Form',
+        'Helpers' => Bootstrapper\Facades\Helpers::class,
+        'Icon' => Bootstrapper\Facades\Icon::class,
+        'InputGroup' => Bootstrapper\Facades\InputGroup::class,
+        'Image' => Bootstrapper\Facades\Image::class,
+        'Label' => Bootstrapper\Facades\Label::class,
+        'MediaObject' => Bootstrapper\Facades\MediaObject::class,
+        'Modal' => Bootstrapper\Facades\Modal::class,
+        'Navbar' => Bootstrapper\Facades\Navbar::class,
+        'Navigation' => Bootstrapper\Facades\Navigation::class,
+        'Panel' => Bootstrapper\Facades\Panel::class,
+        'ProgressBar' => Bootstrapper\Facades\ProgressBar::class,
+        'Tabbable' => Bootstrapper\Facades\Tabbable::class,
+        'Table' => Bootstrapper\Facades\Table::class,
+        'Thumbnail' => Bootstrapper\Facades\Thumbnail::class,
+        'Flash'     => Laracasts\Flash\Flash::class,
     ],
 
 ];
